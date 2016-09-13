@@ -1,7 +1,7 @@
 <?php
-$NameCvs = "PATH";
+$pathCvs = "PATH CVS";
 $row = 0;
-if (($handle = fopen($NameCvs , "r")) !== FALSE) {
+if (($handle = fopen($pathCvs , "r")) !== FALSE) {
 	$itepage= array();
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $num = count($data);
